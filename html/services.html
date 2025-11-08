@@ -1,99 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Meta Essentials -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Legacy Computer Services</title>
+    <meta name="description" content="Legacy Computer Services LTD - Professional web design, cloud solutions, hardware sales & upgrades by passionate BCS & BSE students.">
+    <meta name="theme-color" content="#0d9c43">
 
+    <title>Legacy Computer Services - Services</title>
+
+    <!-- Preconnect for faster font loading -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Poppins Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Main Stylesheet -->
     <link rel="stylesheet" href="../css/index.css">
 </head>
 <body>
-    <!-- Header Section -->
-     <header>
+    <!-- Skip to main content -->
+    <a href="#main" class="sr-only">Skip to main content</a>
 
-        <!-- Navigation Section -->
-         <nav>
-            <ul>
-                <!-- defines home link -->
-                <li>
-                    <a href="./index.html">Home</a>
-                </li>
-
-                <!-- defines Services link -->
-                <li>
-                    <a href="./services.html">Services</a>
-                </li>
-
-                <!-- defines about us -->
-                <li>
-                    <a href="./about_us.html">About Us</a>
-                </li>
+    <!-- Header -->
+    <header class="header" role="banner">
+        <nav class="nav container" aria-label="Primary navigation">
+            <ul class="nav__list">
+                <li><a href="./index.html" class="nav__link">Home</a></li>
+                <li><a href="./services.html" class="nav__link active" aria-current="page">Services</a></li>
+                <li><a href="./about_us.html" class="nav__link">About Us</a></li>
+                <!-- <li><a href="./team.html" class="nav__link">Our Team</a></li> -->
             </ul>
-         </nav>
-     </header>
+        </nav>
+    </header>
 
+    <!-- Main Content -->
+    <main id="main" class="main">
+        <!-- Services Section -->
+        <section class="services-section" aria-labelledby="services-heading">
+            <div class="container">
+                <h1 id="services-heading" class="services-title">Our Services</h1>
 
-     <main>
+                <div class="services-grid">
+                    <!-- Service 1 -->
+                    <article class="service-card">
+                        <h2 class="service-card__title">Web Design and Development</h2>
+                        <p class="service-card__desc">
+                            Creating modern, responsive, and user-friendly websites tailored for individuals and businesses. From simple landing pages to complex web applications.
+                        </p>
+                    </article>
 
-        <!-- Services -->
-         <div class="servicesSection">
-            <div class="serviceTitle">
-                <p >
-                    Our Services
-                </p>
+                    <!-- Service 2 -->
+                    <article class="service-card">
+                        <h2 class="service-card__title">Cloud Services</h2>
+                        <p class="service-card__desc">
+                            Secure cloud storage, reliable hosting, backup solutions, and remote computing services powered by leading providers (AWS, Azure, Google Cloud).
+                        </p>
+                    </article>
+
+                    <!-- Service 3 -->
+                    <article class="service-card">
+                        <h2 class="service-card__title">Hardware Sales and Upgrades</h2>
+                        <p class="service-card__desc">
+                            Supplying high-quality computers, laptops, servers, peripherals, and custom upgrades. We handle assembly, installation, and performance optimization.
+                        </p>
+                    </article>
+
+                    <!-- Service 4 (Bonus Pro Touch) -->
+                    <article class="service-card">
+                        <h2 class="service-card__title">Legacy System Modernization</h2>
+                        <p class="service-card__desc">
+                            Migrating old systems to modern platforms, refactoring legacy code, database upgrades, and ensuring compatibility with current security standards.
+                        </p>
+                    </article>
+
+                    <!-- Service 5 -->
+                    <article class="service-card">
+                        <h2 class="service-card__title">IT Consulting & Support</h2>
+                        <p class="service-card__desc">
+                            Expert advice on technology stack, cybersecurity audits, network setup, 24/7 remote support, and training for your team.
+                        </p>
+                    </article>
+
+                    <!-- Service 6 -->
+                    <article class="service-card">
+                        <h2 class="service-card__title">Software Development</h2>
+                        <p class="service-card__desc">
+                            Custom desktop, mobile, and enterprise software solutions using cutting-edge technologies (Python, Java, .NET, React, Flutter).
+                        </p>
+                    </article>
+                </div>
             </div>
-           
+        </section>
 
-            <!-- Services Description-->
-             <div class="services">
+        <!-- Meet Our Team CTA (consistent with homepage) -->
+        <div class="team-button-container">
+            <a href="./team.html" class="cta-button">
+                <span class="icon" aria-hidden="true">👥</span>
+                Meet the Team Behind These Services
+            </a>
+        </div>
+    </main>
 
-                <!-- service 1 -->
-                   <div class="services1">
-                        <!-- title -->
-                        <p class="serviceHeader">Web Design and Development</p>
-
-                        <!-- Description -->
-                         <div class="serviceDescription">
-                            <p>Creating and maintaining websites for individuals and business</p>
-                         </div>
-
-                   </div>
-
-                 <!-- service 2 -->
-                    <div class="services1">
-                        <!-- title -->
-                        <p class="serviceHeader">Cloud Services</p>
-
-                        <!-- Description -->
-                         <div>
-                            <p>Offering Cloud storage, hosting and remote computing solutions</p>
-                         </div>
-
-                   </div>
-
-                  <!-- service 3 -->
-                    <div class="services1">
-                        <!-- title -->
-                        <p class="serviceHeader">Hardware Sales and Upgrades</p>
-
-                        <!-- Description -->
-                         <div>
-                            <p>Supplying and upgradig computers, servers and accessories</p>
-                         </div>
-
-                   </div>
-             </div>
-         </div>
-     </main>
-
-     <footer>
-
-        <!-- Footer Heading -->
-        <P>
-             @Legacy Computer Services LTD
-        </P>
-       
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <p>© 2025 Legacy Computer Services LTD. All rights reserved.</p>
+        </div>
     </footer>
-
 </body>
 </html>

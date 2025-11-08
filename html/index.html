@@ -1,78 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Meta Essentials -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Legacy Computer Services LTD - Professional legacy system maintenance and student-led IT solutions.">
+    <meta name="theme-color" content="#0d9c43">
+
     <title>Legacy Computer Services</title>
+
+    <!-- Preconnect for faster font loading -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Poppins Font (swap for zero layout shift) -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Main Stylesheet -->
     <link rel="stylesheet" href="../css/index.css">
 </head>
 <body>
-    <!-- Header Section -->
-     <header>
+    <!-- Skip to main content (keyboard accessibility) -->
+    <a href="#main" class="sr-only">Skip to main content</a>
 
+    <!-- Header -->
+    <header class="header" role="banner">
         <!-- Navigation Section -->
-         <nav>
-            <ul>
-                <!-- defines home link -->
-                <li>
-                    <a href="#">Home</a>
-                </li>
-
-                <!-- defines Services link -->
-                <li>
-                    <a href="./services.html">Services</a>
-                </li>
-
-                <!-- defines about us -->
-                <li>
-                    <a href="./about_us.html">About Us</a>
-                </li>
+        <nav class="nav container" aria-label="Primary navigation">
+            <ul class="nav__list">
+                <li><a href="./index.html" class="nav__link active" aria-current="page">Home</a></li>
+                <li><a href="./services.html" class="nav__link">Services</a></li>
+                <li><a href="./about_us.html" class="nav__link">About Us</a></li>
+                <!-- <li><a href="./team.html" class="nav__link">Our Team</a></li> -->
             </ul>
-         </nav>
-     </header>
+        </nav>
+    </header>
 
-
-     <!-- Main tag that has every thing else -->
-     <main>
-
+    <!-- Main content -->
+    <main id="main" class="main">
         <!-- Login form -->
-        <div class="form">
-            <form action="">
+        <section class="form" aria-labelledby="login-heading">
+            <form action="" method="POST" novalidate>
                 <!-- Login Header -->
-                <div class="loginHeader">
-                    <h1>Login Form</h1>
+                <div class="login-header">
+                    <h1 id="login-heading">Login Form</h1>
                 </div>
-                <!-- User name -->
-                 <div class="holders">
-                    <label for="username">User-Name</label>
-                    <input type="text" id="username" name="username">
-                 </div>
-                
-                <!-- password -->
-                 <div class="holders">
-                    <label for="password">Password</label>
-                    <input type="text" id="password" name="password">
-                 </div>
-                 
-                 <!-- Button -->
-                <div class="holders">
-                        <button>Submit</button>
-                </div>
-                 
-                 
 
+                <div class="form__fields">
+                    <!-- User name -->
+                    <div class="holders">
+                        <label for="username" class="form__label">User-Name</label>
+                        <input type="text" id="username" name="username" class="form__input" autocomplete="username" required>
+                    </div>
+                    
+                    <!-- password -->
+                    <div class="holders">
+                        <label for="password" class="form__label">Password</label>
+                        <input type="password" id="password" name="password" class="form__input" autocomplete="current-password" required>
+                    </div>
+                     
+                    <!-- Button -->
+                    <div class="holders">
+                        <button type="submit" class="form__submit">Submit</button>
+                    </div>
+                </div>
             </form>
+        </section>
+
+        <!-- Meet Our Team CTA -->
+        <div class="team-button-container">
+            <a href="./team.html" class="cta-button">
+                <span class="icon" aria-hidden="true">👥</span>
+                Meet Our Team
+            </a>
         </div>
-     </main>
+    </main>
 
-    <footer>
-
-        <!-- Footer Heading -->
-        <P>
-             @Legacy Computer Services LTD
-        </P>
-       
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <p>© 2025 Legacy Computer Services LTD. All rights reserved.</p>
+        </div>
     </footer>
-
 </body>
 </html>
